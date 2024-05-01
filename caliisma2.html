@@ -1,0 +1,89 @@
+<html lang="tr">
+    <head>
+        <title>Javascript Click Event (olay)</title>
+        <style>
+                body{
+                    margin: 0;
+                    padding: 0;
+                }
+                .sol{
+                    height: 250px;
+                    width: 250px;
+                    font-size: 50px;
+                    font-weight: 20px;
+                    color: black;
+                    text-align: center;
+                    margin-top: 50px;
+                    margin-left: 50px;
+                    display: inline-block;
+                    background: linear-gradient(to right, yellow 50%, orange 55%);
+                    cursor: pointer;
+                }
+                .sag{
+                    height: 250px;
+                    width: 250px;
+                    background-color: red;
+                    display: inline-block;
+                    margin-top: 50px;
+        
+                    font-size: 50px;
+                    font-weight: 20px;
+                    color: black;
+                    text-align: center;
+                    cursor: pointer;
+                }
+                .orta{
+                    height: 250px;
+                    width: 250px;
+                    background-color: blue;
+                    display: inline-block;
+                    margin-top: 50px;
+        
+                    font-size: 50px;
+                    font-weight: 20px;
+                    color: black;
+                    text-align: center;
+                    cursor: pointer;
+                }
+            </style>
+    </head>
+    <body>
+        <center>
+            <div class="sol">
+
+                <span onclick="tiklandi('calisma1.html')">Ana Sayfa</span>
+
+            </div>
+            <div class="orta">
+                <span onclick="tiklandi('blog.html')">Blog</span>
+            </div>
+            <div class="sag">
+                <span onclick="tiklandi('siparis.html')">Siparis</span>
+            </div>
+            <div class="sag">
+                <span id="idDegistir" onclick="degistir()">Değiştir</span>
+            </div>
+
+        </center>
+        <!-- event türkçesi olay -->
+        <script>
+            function degistir()
+            {
+                if(document.getElementById("idDegistir").innerHTML=="Değiştir")
+                {
+                    document.getElementById("idDegistir").innerHTML = "İletişim";
+                }
+                else
+                {
+                    document.getElementById("idDegistir").innerHTML = "Değiştir";
+                }
+            }
+            
+            function tiklandi(gidileceksayfa)
+            {
+                    location.href = gidileceksayfa;
+            }
+
+        </script>
+    </body>
+</html>
