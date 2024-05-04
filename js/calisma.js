@@ -1,13 +1,13 @@
-                              
-function karenincevresi(birkenaruzunlugu){
+function ekranayazdir(isim, soyisim, yas) 
+{
 
-  let divinicerigi = document.getElementById("hesap").innerHTML;
-  alert(divinicerigi);
+  alert(isim + " " + soyisim + " " + yas);
   
 }
 
-
-karenincevresi(5);
-
-//1. ödev matematiksel işlemler kullanarak fonksiyon oluştur
-//2. ödev html + css kullanarak CARD (Kart ) oluştur 
+ekranayazdir("ahmet", "aslan", 10);
+ekranayazdir("burak", "üçkardeş", 12);
+ekranayazdir("mazhar", "kalmaz", 9);
+ekranayazdir("salih", "yüce", 12);
+ekranayazdir("ömer", "akin", 14);
+ekranayazdir("serdar", "kandiran", 18);
