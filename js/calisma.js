@@ -1,13 +1,16 @@
-function ekranayazdir(isim, soyisim, yas) 
-{
+function paraustu(verilenpara,urunkacpara){
 
-  alert(isim + " " + soyisim + " " + yas);
-  
+  if(verilenpara-urunkacpara < 0)
+  {
+      alert("bize borçlusunuz : " + (verilenpara-urunkacpara));
+  }
+  else
+  {
+    alert("verilecek paraüstü : " + (verilenpara-urunkacpara));
+  }
 }
 
-ekranayazdir("ahmet", "aslan", 10);
-ekranayazdir("burak", "üçkardeş", 12);
-ekranayazdir("mazhar", "kalmaz", 9);
-ekranayazdir("salih", "yüce", 12);
-ekranayazdir("ömer", "akin", 14);
-ekranayazdir("serdar", "kandiran", 18);
+let sayi1 = prompt("kaç para verildi");
+let sayi2 = prompt("urun kaç TL");
+
+paraustu(sayi1,sayi2);
