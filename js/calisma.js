@@ -1,16 +1,9 @@
-function paraustu(verilenpara,urunkacpara){
-
-  if(verilenpara-urunkacpara < 0)
-  {
-      alert("bize borçlusunuz : " + (verilenpara-urunkacpara));
-  }
-  else
-  {
-    alert("verilecek paraüstü : " + (verilenpara-urunkacpara));
-  }
+function sayikontrol(sayi)
+{
+ // gelen sayi 100 den küçükse ekrana sayı 100 den küçük
+ //gelen sayi 100 den büyükse ekrana sayı 100 den büyük
 }
 
-let sayi1 = prompt("kaç para verildi");
-let sayi2 = prompt("urun kaç TL");
 
-paraustu(sayi1,sayi2);
+
+
