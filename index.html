@@ -1,24 +1,74 @@
 <html lang="tr">
     <head>
-        <title>Çalış</title>
+        <title>Çalışma</title>
         <style>
-            p>span p{
-                color:blue;
-                font-weight: 700;
+            body{
+                background-color: #333;
+            }
+            .container{
+                border: 2px solid aqua;
+                width: 200px;
+                height: 200px;
+                margin: auto;
+                box-shadow: 3px 3px 5px 4px green;
+            }
+            .innerBlue{
+                height: 100px;
+                width: 100px;
+                background-color: blue;
+                margin: auto;
+                margin-top: 25px;
+                box-shadow: 2px 2px 2px brown;
+            }
+            .innerRed{
+                height: 100px;
+                width: 100px;
+                background-color: red;
+                margin: auto;
+                margin-top: 25px;
+                box-shadow: 2px 2px 2px gray;
+            }
+            .butonlar {
+                height: 100px;
+                width: 300px;
+                margin:auto;
+            }
+            .buton{
+                border-radius: 35px;
+                background-color: #6166B6;
+                cursor: pointer;
+                border: 1px solid antiquewhite;
+                box-shadow: 5px 5px 3px black;
+            }
+            .butonlarTextWhite{
+                color: white;
+            }
+            .butonlarTextBlack{
+                color: blue;
+            }
+
+            .test{
+                color: blue;
+                font-size: 20px;
+                font-weight: 500;
             }
         </style>
     </head>
     <body>
 
-            <p>
-                Lorem  
-                <span>ips<p>um</p></span> 
-               
-                dolor sit amet consectetur adipisicing elit. Laudantium doloremque, quae ea nemo sequi saepe! Dicta nemo incidunt nobis quas perferendis temporibus enim ad facilis necessitatibus quod? Ullam, vero sed!
+        <div class="container" id="container">
+            
+         
+        </div>
 
+        <div class="butonlar">
 
-            </p>
+        <button onclick="elementolustur('H1','test','Merhaba Dünya')">Oluştur</button>
 
+        </div>
+        <script src="calisma.js">
+            
+        </script>
     </body>
 
 </html>
