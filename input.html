@@ -1,28 +1,29 @@
 <html lang="tr">
     <head>
         <title>Çalışma</title>
+        <style>
+            .siparisBilgisi{
+                width: 250px;
+                height: 50px;
+                box-shadow: 2px 2px 2px black;
+                border-radius: 5%;
+                background-color:darkslategrey;
+                color: white;
+                margin-top: 20px;
+            }
+        </style>
     </head>
     <body> 
-    <!-- type , value , placeholder -->
-    <!-- type:  text password number checkbox radio date -->
-        <input type="checkbox">Köpek</input>
-        <input type="checkbox">Kedi</input>
-        <input type="checkbox">Kuş</input>
-        <input type="number"></input><i>&#9732;</i>
-        <input type="radio" name="cinsiyet">Erkek</input>
-        <input type="radio" name="cinsiyet">Bayan</input>
-            
-            <p></p>
-        <input type="date"></input>
-        <br>
-        <button onclick="getir()"> Getir</button>
+        <input id="kactop" placeholder="kaç top" type="number" max="7" min="2" value="1"></input>
+        <input id="neyli" type="text" placeholder="Neyli (meyveli,kakao sade,karamelli)"></input>
+        <input id="adi" type="text" placeholder="Adınız"/>
+        <input id="tur" type="text" placeholder="tabakta veya külahta"/>
+        <button onclick="dondurmaci()">Sipariş Ver</button>
 
-        <script>
-            function getir(){
-                let isimgiriniz = prompt("isminizi giriniz");
-                alert(isimgiriniz);
-            }
-        </script>
+        <div class="siparisBilgisi" id="siparis">dondurma Siparis Bilgi Bölümü</div>
+
+
+        <script src="js/calisma.js"></script>
     </body>
 
 </html>
