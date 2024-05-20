@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title>Calışma 8</title>
+        <style>
+        body{
+            background-image: url('resimler/2046751.jpg');
+        }
+        .container{
+            width: 300px;
+            height: 400px;
+            background: linear-gradient(to left , #36BFB1 50%,#014034 65%);
+            margin: auto;
+            display: grid;
+            grid-template-rows:1fr 1fr ;
+            row-gap: 5px;
+            opacity: 0.9;
+            text-align: center;
+             }
+            .item{
+                height: 20px;
+            }
+            .item2{
+                padding-top: 180px;
+            }
+            .buton{
+                color: red;
+                border-radius: 35%;
+                width: 200px;
+                height: 30px;
+                background-color: #038C73;
+                transition: 2s;
+            }
+            .butonContainer{
+                margin-top: -150px;
+            }
+            .buton:hover{
+                background-color: white;
+                color: black;
+                transition: 2s;
+            }
+            
+    </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="item item2"> <input type="text" placeholder="kullanıcı adı" /></div>
+            <div class="item"> <input type="password" placeholder="şifre" /></div>
+            <div class="item butonContainer"><button class="buton">Login</button></div>
+        </div>
+    </body>
+</html>
