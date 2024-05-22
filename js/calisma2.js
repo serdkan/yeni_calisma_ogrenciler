@@ -1,15 +1,19 @@
-function ucgenincevresi(birincikenar, ikincikenar, ucuncukenar) {
-  let ucgenincevresi = `ucgenin cevre uzunlugu : ${birincikenar + ikincikenar + ucuncukenar}`;
-    alert(ucgenincevresi);
-    if(birincikenar==ikincikenar && ikincikenar == ucuncukenar)
-    {
-        alert("eş kenar üçgen");
+function ceviri() 
+{
+    let kelime = document.getElementById("kelimeId").value;
+    let turkceDiv = document.getElementById("turkce");
+
+    if(kelime=="want"){
+        turkceDiv.innerHTML = "istemek";
     }
-    if(birincikenar==ikincikenar && ikincikenar!= ucuncukenar && birincikenar!=ucuncukenar )
-    {
-        alert("")
+    if(kelime=="hear"){
+        turkceDiv.innerHTML = "saç";
+    }
+    if(kelime=="try"){
+        turkceDiv.innerHTML = "denemek";
+    }if(kelime=="wait"){
+        turkceDiv.innerHTML = "beklemek";
     }
 }
 
-ucgenincevresi(30,20,20);//60
-//ikiz kenar üçgeni tespit eden fonksiyon yazıyonuz
+
