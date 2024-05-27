@@ -1,23 +1,58 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .item{
-            color: red;
-
-        }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .container{
+                width:800px;
+                height: 200px;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                text-align: center;
+            }
+            .itemCol{
+                display: grid;
+                background-color: bisque;
+                grid-template-rows: 1fr 3fr 1fr;
+                width: 200px;
+                box-shadow: 2px 2px 3px gray;
+                border-radius: 5px;
+            }
+            img{
+                width: 50px;
+                height: 50px;
+            }
+            ::placeholder {
+                color: red;
+                opacity: 1; /* Firefox */
+                }
+                ::-ms-input-placeholder { /* Edge 12-18 */
+                color: red;
+                }
     </style>
-</head>
-<body>
-    <div class="container" id="kapsayici">
+    </head>
+    <body>
+        <div class="container">
+            <div class="itemCol">
+                <div class="itemrow"><img src="resimler/player.png" /></div>
+                <div class="itemrow">açıklama</div>
+                <div class="itemrow">fiyat</div>
+                <input type="text" placeholder="deneme">
+            </div>
+            <div class="itemCol">
+                <div class="itemrow">resim</div>
+                <div class="itemrow">açıklama</div>
+                <div class="itemrow">fiyat</div>
 
+            </div>
+            <div class="itemCol">
+                <div class="itemrow">resim</div>
+                <div class="itemrow">açıklama</div>
+                <div class="itemrow">fiyat</div>
+            </div>
 
-    </div>
-    <button onmouseover="divolustur()">oluştur</button>
-    <script src="js/calisma4.js"></script>
-
-</body>
+        </div>
+    </body>
 </html>

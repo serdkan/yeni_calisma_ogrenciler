@@ -1,6 +1,8 @@
 function divolustur() {
             //0
-  let yazilar = [5,6,8,15,21,33,34,545248,6545];
+  let urunisimleri = ["mouse","monitör","klavye"];
+  let aciklamalar = ["mouse çok güzel ","monitör curve ışık sızdırmaz","klavye RGB"];
+  let fiyatlar = [100,500,250];
 
   for(
     let i = 0; i < yazilar.length; i++) 
