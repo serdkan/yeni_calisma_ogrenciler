@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            width: 1000px;
+            height: 700px;
+            margin: auto;
+            column-gap: 10px;
+        }
+        .item{
+            background-color:bisque;
+            border-radius: 10px;
+        }
+        .satir{
+            background-color: blueviolet;
+        }
+        .birinci{
+            display: grid;
+            grid-template-rows:3fr 1fr 1fr 1fr 1fr 1fr ;
+            row-gap: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item birinci">
+            <div class="satir"></div>
+            <div class="satir"></div>
+            <div class="satir"></div>
+            <div class="satir"></div>
+            <div class="satir"></div>
+            <div class="satir"></div>
+        </div>
+        <div class="item ikinci"></div>
+        <div class="item ucuncu"></div>
+    </div>
+    
+</body>
+</html>
