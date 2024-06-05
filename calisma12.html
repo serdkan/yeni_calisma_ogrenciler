@@ -1,45 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            *{
+                font-family: Monospace;
+            }
         .container{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             width: 1000px;
-            height: 700px;
+            height: 500px;
             margin: auto;
-            column-gap: 10px;
+            column-gap: 20px;
+
         }
         .item{
             background-color:bisque;
             border-radius: 10px;
         }
         .satir{
-            background-color: blueviolet;
+            background-color:wheat;
+            border-radius: 15px;
         }
         .birinci{
             display: grid;
-            grid-template-rows:3fr 1fr 1fr 1fr 1fr 1fr ;
+            grid-template-rows:3fr 1fr 1fr 1fr 1fr ;
             row-gap: 5px;
+            border-radius: 10px;
+            box-shadow: -10px -5px 25px black ;
+        }
+        .img{
+            text-align: center;
+            border-radius: 15px;
+        }
+        #resim1{
+            border-radius: 15px;
+            margin-top: 4px;
+        }
+        .ustaciklama{
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            padding-top: 15px;
+            padding-left: 15px;
+        }
+        #web{
+            border-radius: 5px;
+            background-color:azure;
+            color: blueviolet;
+        }
+        .aciklama{
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+        .bar{
+            width: 250px;
+            border: 5px solid blueviolet;
+            background:linear-gradient(to left,blueviolet 30%,white 70%);
+            height: 5px;
+            border-radius: 15px;
+            margin-top: 15px;
+            margin-left: 20px;
+        }
+        .enalt{
+            margin-left: 15px;
         }
     </style>
-</head>
-<body>
-    <div class="container">
-        <div class="item birinci">
-            <div class="satir"></div>
-            <div class="satir"></div>
-            <div class="satir"></div>
-            <div class="satir"></div>
-            <div class="satir"></div>
-            <div class="satir"></div>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item birinci">
+                <div class="satir img"><img id="resim1" src="resimler/1.jpg"
+                        width="300px" height="245px" /> </div>
+                <div class="satir ustaciklama">
+                    <div class="arabolme1"><span id="web"></span></div>
+                    <div class="arabolme2"><span id="puan">5.0</span>
+                        <span
+                            style="font-size:100%;color:orange;">&starf;</span>
+                        <span
+                            style="font-size:100%;color:orange;">&starf;</span>
+                        <span
+                            style="font-size:100%;color:orange;">&starf;</span>
+                        <span
+                            style="font-size:100%;color:orange;">&starf;</span>
+                        <span
+                            style="font-size:100%;color:orange;">&starf;</span>
+                        <span id="izlenmeorani"> &nbsp;&nbsp;&nbsp;&nbsp; (1.23K)</span>
+                    </div>
+
+                </div>
+                <div class="satir aciklama">
+                    <strong id="baslik">Basics of Javascript </strong><br>
+                    <span>To add real spaces to your text, you can use the
+                        &nbsp; character entity.</span>
+                </div>
+                <div class="satir"><img src="resimler/45-clock-time.svg"
+                        width="20px" height="20px" /> 30 minutes
+                    <br>
+                    <div class="bar"></div>
+                </div>
+                <div class="satir enalt"><img src="resimler/basket.png"
+                        width="15px" height="15px"> <button>Sepete
+                        ekle</button><button>İncele</button></div>
+
+            </div>
+            <div class="item ikinci"></div>
+            <div class="item ucuncu"></div>
         </div>
-        <div class="item ikinci"></div>
-        <div class="item ucuncu"></div>
-    </div>
-    
-</body>
+        <script src="js/calisma6.js"></script>
+    </body>
 </html>
