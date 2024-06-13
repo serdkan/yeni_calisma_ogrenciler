@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>animasyon</title>
+        <style>
+            body {
+    background-image: url('31302.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+                }
+        .container{
+            animation-name: show;
+            animation-duration: 10s;
+
+        }
+        @keyframes show {
+         0%{margin-left: 500px; transform: rotate(180deg);}
+         25%{margin-left: 0px; transform: translate(700px,100px);}
+         100%{margin-left: 0px;}
+        }
+    </style>
+    </head>
+    <body>
+        <img class="container" src="butter.gif"  width="70px" height="70px"/>
+    </body>
+</html>
